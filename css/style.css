@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#141e30, #243b55);
+    font-family: sans-serif;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    /* padding-bottom: 60px; */
+}
+
+.form-container form {
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    width: 400px;
+    /* position: relative; */
+
+}   
+
+.form-container form h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #03e9f4;
+    text-transform: uppercase;
+}
+
+.form-container .box input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    overflow: hidden;
+}
+
+.form-container .box {
+    position: relative;
+}
+
+.form-container .box label {
+    position: absolute;
+    top: -0px;
+    left: 0;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form-container .box input:focus {
+    background-color: #141e30;
+    color: #03e9f4;
+}
+
+.form-container .box input:focus ~ label,
+.form-container .box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.form-container form .btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    box-shadow: 0 0 4px #03e9f4;
+    font-size: 16px;
+    transition: .5s;
+    margin-top: 10px;
+    overflow: hidden;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+}
+
+.form-container form .btn:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.form-container form p {
+    margin-top: 10px;
+    padding-top: 25px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-container form p a {
+    color: #03e9f4;
+    text-decoration: none;
+}
+    
+.form-container form .error-msg {
+    margin: 10px 0 20px;
+    display: block;
+    background: #243b55;
+    color: #03e9f4;
+    border: 1px solid #03e9f4;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4;            
+}
+
+.form-container .content h1{
+    font-size: 2rem;
+    color: #fff;
+    margin: 30px;
+    padding-bottom: 10px;
+}
+
+.form-container .content a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 15px 10px 20px;
+    color: #03e9f4;
+    border: 1px solid #03e9f4;
+    box-shadow: 0 0 4px #03e9f4;
+    letter-spacing: 3px;
+    transition: .5s;
+}
+
+.form-container .content a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.form-container .content span {
+    color: #03e9f4;
+    letter-spacing: 4px;
+    box-shadow: 0 0 4px #03e9f4;
+    margin: 0 10px;
+    padding: 5px;          
+    border-radius: 5px;
+}
